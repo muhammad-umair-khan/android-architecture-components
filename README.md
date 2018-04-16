@@ -1,1 +1,1 @@
-# android-mvvm-architecture
+# Android MVVM Architecture - Sample APP
