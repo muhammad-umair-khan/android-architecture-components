@@ -5,7 +5,7 @@ This repository contains a sample app following Android Architecture Components(
 # Libray References:
 1- RxJava2: https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0
 
-2- Dagger2: https://github.com/MindorksOpenSource/android-mvvm-architecture/blob/master/README.md
+2- Dagger2: https://github.com/MindorksOpenSource/android-dagger2-example
 
 3- Architecture Components: https://github.com/googlesamples/android-architecture-components
 
