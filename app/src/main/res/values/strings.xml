@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Test Project</string>
+
+    <string name="body">body</string>
+    <string name="title">title</string>
+    <string name="title_post">Posts</string>
+
+
+    <string name="arg_post_id">post_id</string>
+    <string name="arg_post_title">post_title</string>
+    <string name="arg_post_image_url">post_image_url</string>
+    <string name="arg_post_photo">post_photo</string>
+    <string name="arg_comment">comment</string>
+    <string name="arg_fragment">fragment</string>
+
+    <string name="please_wait">Please Wait…</string>
+
+
+    <string name="err_network">Network not available</string>
+    <string name="err_nodata">No data found</string>
+
+</resources>
