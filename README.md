@@ -7,5 +7,8 @@ This repository contains a sample app following Android Architecture Components(
 2- Dagger2: https://github.com/MindorksOpenSource/android-mvvm-architecture/blob/master/README.md
 3- Architecture Components: https://github.com/googlesamples/android-architecture-components
 
+# Future Updates:
+Planned updates include: Databinding,Room and Paging.
+
 # Contributions:
 Any contributions will be highly appreciated.
