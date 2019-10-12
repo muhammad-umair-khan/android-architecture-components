@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/recycler_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--NOTE: Added this additional view to show how can we pass viewmodel to included view-->
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.kstechsolutions.mvvm.modules.posts.PostListViewModel" />
+    </data>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:data="@{viewModel.uiModel.data}"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</layout>

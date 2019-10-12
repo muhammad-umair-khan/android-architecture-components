@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/postListFragment">
+
+    <activity
+        android:id="@+id/postActivity"
+        android:name="com.kstechsolutions.mvvm.modules.posts.PostActivity"
+        android:label="activity_post"
+        tools:layout="@layout/activity_main" />
+
+    <fragment
+        android:id="@+id/postListFragment"
+        tools:layout="@layout/frag_postlist"
+        android:name="com.kstechsolutions.mvvm.modules.posts.PostListFragment"
+        android:label="postListFragment">
+
+        <action
+            android:id="@+id/openComments"
+            app:destination="@+id/commentListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/commentListFragment"
+        tools:layout="@layout/frag_commentlist"
+        android:name="com.kstechsolutions.mvvm.modules.comments.CommentListFragment"
+        android:label="commentListFragment">
+
+        <argument
+            android:name="postId"
+            app:argType="integer" />
+
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
